@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColdDrinksActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/speedee"
+            android:padding="0dp"
+            android:text="@string/back_to_menu"
+            android:textColor="@color/dark_gray"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonCocaCola500Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_coca_cola_500_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/coca_cola_500_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonCocaColaZeroSugar500Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_coca_cola_zero_sugar_500_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/coca_cola_zero_sugar_500_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonFanta500Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_fanta_500_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/fanta_500_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonSprite500Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_sprite_500_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/sprite_500_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonLipton500Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_lipton_500_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/lipton_500_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonAppleJuice500Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_apple_juice_500_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/apple_juice_500_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonOrangeJuice500Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_orange_juice_500_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/orange_juice_500_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonCocaCola400Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_coca_cola_400_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/coca_cola_400_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonCocaColaZeroSugar400Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_coca_cola_zero_sugar_400_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/coca_cola_zero_sugar_400_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonFanta400Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_fanta_400_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/fanta_400_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonSprite400Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_sprite_400_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/sprite_400_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonLipton400Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_lipton_400_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/lipton_400_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonLipton250Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_lipton_250_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/lipton_250_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonCocaCola250Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_coca_cola_250_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/coca_cola_250_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonCocaColaZeroSugar250Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_coca_cola_zero_sugar_250_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/coca_cola_zero_sugar_250_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonFanta250Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_fanta_250_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/fanta_250_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonSprite250Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_sprite_250_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/sprite_250_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonAppleJuice250Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_apple_juice_250_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/apple_juice_250_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonOrangeJuice250Ml"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_orange_juice_250_ml_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/orange_juice_250_ml"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonSparklingWater"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_sparkling_water_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/sparkling_water"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonStillWater"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_still_water_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/still_water"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonFuzeteaBlackTeaForestFruits"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_fuzetea_black_tea_forest_fruits_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/fuzetea_black_tea_forest_fruits"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonFuzeteaBlackTeaLemonAndLemongrass"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_fuzetea_black_tea_lemon_and_lemongrass_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/fuzetea_black_tea_lemon_and_lemongrass"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonFuzeteaBlackTeaPeachesAndHibiscus"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_fuzetea_black_tea_peaches_and_hibiscus_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/fuzetea_black_tea_peaches_and_hibiscus"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonBurnEnergyDrink"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_burn_energy_drink_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/burn_energy_drink"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

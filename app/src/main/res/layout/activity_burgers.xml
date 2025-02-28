@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BurgersActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/speedee"
+            android:padding="0dp"
+            android:text="@string/back_to_menu"
+            android:textColor="@color/dark_gray"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonBigMac"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_big_mac_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/big_mac"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonBigTastyBacon"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_big_tasty_bacon_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/big_tasty_bacon"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonCheesyBeef"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_cheesy_beef_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/cheesy_beef"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonCheesyChicken"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_cheesy_chicken_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/cheesy_chicken"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonDoubleBigTasty"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_double_big_tasty_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/double_big_tasty"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonJollyCheese"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_jolly_cheese_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/jolly_cheese"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonNoelChicken"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_noel_chicken_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/noel_chicken"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonXmasBeef"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_xmas_beef_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/xmas_beef"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonBigTasty"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_big_tasty_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/big_tasty"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonBigTastyChicken"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_big_tasty_chicken_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/big_tasty_chicken"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonMcCrispy"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_mccrispy_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/mccrispy"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonDoubleMcRoyal"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_double_mcroyal_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/double_mcroyal"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonMcRoyalDeluxe"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_mcroyal_deluxe_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/mcroyal_deluxe"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonMcRoyalBacon"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_mcroyal_bacon_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/mcroyal_bacon"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonMcRoyal"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_mcroyal_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/mcroyal"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonBigMacBacon"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_big_mac_bacon_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/big_mac_bacon"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonMcChicken"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_mcchicken_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/mcchicken"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonDoubleFiletOFish"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_double_filet_o_fish_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/double_filet_o_fish"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonFiletOFish"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_filet_o_fish_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/filet_o_fish"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonTripleCheeseburger"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_triple_cheeseburger_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/triple_cheeseburger"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonDoubleCheeseburger"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_double_cheeseburger_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/double_cheeseburger"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonDoubleMcPuisor"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_double_mcpuisor_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/double_mcpuisor"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonDoubleCheeseLavash"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_double_cheese_lavash_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/double_cheese_lavash"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonCheeseLavash"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_cheese_lavash_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/cheese_lavash"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonCheeseburger"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_cheeseburger_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/cheeseburger"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonHamburger"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_hamburger_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/hamburger"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonMcPuisor"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_mcpuisor_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/mcpuisor"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonMcToast"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_mctoast_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/mctoast"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonCroissantWithHam"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/ic_croissant_with_ham_foreground"
+                    android:fontFamily="@font/speedee"
+                    android:text="@string/croissant_with_ham"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
